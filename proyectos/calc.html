@@ -1,0 +1,19 @@
+<input type="text" id="n11" placeholder="n1">
+<input type="text" id="n22" placeholder="n2">
+
+   
+<button id="calcular2">Calcular</button>
+
+<output id="r2"></output> 
+<script>
+    
+    document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        let r;
+            r = n1 + n2;
+        <br></br>
+        document.querySelector('#r2').innerHTML = r;
+    });
+
+</script>

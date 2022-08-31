@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--ENCABEZADO-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos familiares</title>
+    
+
+
+</head>
+<!--INFORMACION-->
+<body>
+
+  <link rel="stylesheet" href="css/css1.css"/>
+
+  <a href="#s1" class="section" id="one">  Ingreso Familiar</a>
+  <div>
+  <a href="#s2" class="section" id="two">  Gasto Familiar</a>
+  <div>
+  <a href="#s3" class="section" id="three"> Presupuesto familiar</a>
+  <div>
+  <a href="#s4" class="section" id="four"> Importancia del ahorro</a>
+
+
+
+<!--SECCION 1-->
+<section id="s1">
+
+  <h1>Ingresos familiares</h1>
+  <div>
+    <h1>Señala en cada caso si tus ingresos son Mensuales o Semanales</h1>
+    Mensual "M"<br />
+    Semanal "s"<br />
+    </div> 
+    <br></br>
+
+<!--VARIABLES-->
+<table class="default">
+<tr>
+  <td></td>
+  <td><b>FRECUENCIA</b></td>
+  <td><b>MONTO</b></td>
+</tr>
+<tr>
+  <td>Ingresos del esposo </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p1" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="number" id="n11" placeholder="en bolivianos" required></p></td>
+</tr>
+<tr>
+  <td>Ingresos del esposa </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p2" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="number" id="n22" placeholder="en bolivianos" required></td>
+</tr>
+<tr>
+  <td id="rrr">Otros Ingresos </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p3" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><p><input type="number" id="n33"></p></td>
+</tr>
+<tr>
+  <output id="r"></output> 
+  <td><b>TOTAL INGRESOS</b></td>
+  <td> </td>
+  <td>tu resultado es: 
+    <spam id="r2"></spam> 
+  </td>
+</tr>
+
+<tr>
+  <td> </td>
+  <td> </td>
+  <td><button id="calcular2" onclick="calcu()">Calcular</button> </td>
+</tr>
+</table>
+</section>
+<br>
+
+<!--SECCION 2-->
+<section id="s2">
+
+  <h1>Gastos familiares</h1>
+  <div>
+    <h1>Señala en cada caso si tus ingresos son Mensuales o Semanales</h1>
+    Mensual "M"<br />
+    Semanal "s"<br />
+    </div> 
+    <br></br>
+
+<!--VARIABLES-->
+<table class="default">
+<tr>
+  <td></td>
+  <td><b>FRECUENCIA</b> </td>
+  <td><b>MONTO</b> </td>
+</tr>
+
+<tr>
+  <td>Gastos de alimentacion </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p4" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n99"></p></td>
+</tr>
+
+<tr>
+  <td>Serv. Basico (Luz) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n98"></p></td>
+</tr>
+
+<tr>
+  <td>Serv. Basico (Agua) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n97"></p></td>
+</tr>
+
+<tr>
+  <td>Serv. Basico (telefono) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n96"></p></td>
+</tr>
+
+<tr>
+  <td>Transporte </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p5" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n95"></p></td>
+</tr>
+
+<tr>
+  <td>Educacion </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p6" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n94"></p></td>
+</tr>
+
+<tr>
+  <td>Vestimenta </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p7" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n93"></p></td>
+</tr>
+
+<tr>
+  <td>Recreacion gastos </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p8" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n92"></p></td>
+</tr>
+
+<tr>
+  <td>Cuota de Credito </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="p9" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n91"></p></td>
+</tr>
+
+<tr>
+  <output id="r9"></output> 
+  <td colspan="2"><b>TOTAL GASTOS</b></td>
+  <td>tu resultado es: 
+    <spam id="r99"></spam> 
+  </td>
+</tr>
+
+<tr>
+  <td> </td>
+  <td> </td>
+  <td><button id="calcular2" onclick="calcu2()">Calcular</button> </td>
+</tr>
+</table>
+</section>
+
+<!--SECCION 3-->
+  <section id="s3">
+
+  
+  <!--VARIABLES-->  
+  <table class="default">
+  <h1>PRESUPUESTO FAMILIAR</h1>
+  <tr>
+    <td></td>
+    <td><b>MENSUAL</b></td>
+    <td><b>ANUAL</b></td>
+  </tr> 
+  
+  <tr>
+    <td><b>INGRESO FAMILIAR</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Ingreso esposo</td>
+    <td> <span id="spm1"></span> </td>
+    <td> <span id="spa1"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Ingreso esposa</td>
+    <td> <span id="spm2"></span> </td>
+    <td> <span id="spa2"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Otros ingresos familiares</td>
+    <td> <span id="spm3"></span> </td>
+    <td> <span id="spa3"></span> </td>
+  </tr>
+  
+  <tr>
+    <td><b>TOTAL DE INGRESOS</b></td>
+    <td> <span id="spm3.1"></span> </td>
+    <td> <span id="spa3.1"></span> </td>
+  </tr>
+
+  <tr>
+    <td><b>GASTO FAMILIAR</b></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+
+  <tr>
+    <td>Gasto alimentacion</td>
+    <td> <span id="spm4"></span> </td>
+    <td> <span id="spa4"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Serv. Basico (Luz) (Mensual)</td>
+    <td> <span id="spm5"></span> </td>
+    <td> <span id="spa5"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Serv. Basico (Agua) (Mensual)</td>
+    <td> <span id="spm6"></span> </td>
+    <td> <span id="spa6"></span> </td>
+  </tr>
+  
+  <tr>
+    <td>Serv. Basico (telefono) (Mensual)</td>
+    <td> <span id="spm7"></span> </td>
+    <td> <span id="spa7"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Transporte</td>
+    <td> <span id="spm8"></span> </td>
+    <td> <span id="spa8"></span> </td>
+  </tr>
+
+  <tr>
+    <td>educacion</td>
+    <td> <span id="spm9"></span> </td>
+    <td> <span id="spa9"></span> </td>
+  </tr>
+
+  <tr>
+    <td>vestimenta</td>
+    <td> <span id="spm10"></span> </td>
+    <td> <span id="spa10"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Recreacion Otros</td>
+    <td> <span id="spm11"></span> </td>
+    <td> <span id="spa11"></span> </td>
+  </tr>
+
+  <tr>
+    <td>Cuota Credito (si tiene prestamo)</td>
+    <td> <span id="spm12"></span> </td>
+    <td> <span id="spa12"></span> </td>
+  </tr>
+
+  <tr>
+    <td><b>TOTAL PRESUPUESTO FAMILIAR</b></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+
+  <tr>
+    <td><b>AHORRO</b></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+
+ 
+  
+  <!--<tr>
+    <output id="r9"></output> 
+    
+    <td colspan="2">TOTAL INGRESOS</td>
+    
+    <td>tu resultado es: 
+      <spam id="r99"></spam> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td><button id="calcular2" onclick="calcu2()">Calcular</button> </td>
+  </tr>-->
+  
+
+</section>
+
+<!--SECCION 4-->
+<section id="s4">
+  
+
+<!--VARIABLES-->
+<table class="default">
+<tr>
+  <td><h1><b>IMPORTANCIA DEL AHORRO</b></h1></td>
+</tr>
+
+<tr>
+  <td><b>Un presupuesto familiar solido esta relacionado con un mayor bienestar a largo plazo</b></td>
+</tr>
+
+<tr>
+  <td colspan="1">Un presupuesto familiar solido esta relacionado con un mayor bienestar a largo plazo</td>
+</tr>
+
+<tr>
+  <td><b>✔️ Fortalezca su capacidad de generar ingresos</b></td>
+</tr>
+
+<tr>
+  <td><b>✔️ Adopte una cultura de ahorro</b></td>
+</tr> 
+
+<tr>
+  <td>Cuando <b>INGRESOS</b> sea > a <b>GASTOS</b> = <b>AHORRO CORRIENTE</b> | <b>AHORRO PERMANENTE</b></td>
+  <td>Cuando <b>INGRESOS</b> sea < a <b>GASTOS</b> = <b>ENDEUDAMIENTO CORRIENTE</b> | <b>SOBREENDEUDAMIENTO</b></td>
+</tr>
+
+<br></br>
+
+<tr>
+  <td><b>POCISION ACREEDORA NETA</b></td>
+  <td><b>POCISION DEUDORA NETA</b></td>
+</tr>
+
+<tr>
+  <td>* Posibilidad de mayor tendencia de bienes duraderos</td>
+  <td>* Inestabilidad economica y posibilidad de economia</td>  
+</tr> 
+
+<tr>
+  <td>* Posibilidad de invertir en mejor educacion</td>
+  <td>* Perdida de confianza entre entes familiares y entes financieras</td>  
+</tr> 
+
+<tr>
+  <td>* Posibilidad de afrontar eventualidades negativas</td>
+  <td>* imposibilidad de afrontar eventualidades negativas</td>  
+</tr> 
+
+<tr>
+  <td>* Posibilidad de endeudamiento razonable</td>
+    
+</tr> 
+
+</table>
+</section>
+
+
+<script src="js/prueba1.js"></script>
+</body>
+</html> 
+
+
+<!--
+<tr>
+  <td>Serv. Basico (Luz) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n98"></p></td>
+</tr>
+
+<tr>
+  <td>Serv. Basico (Agua) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n97"></p></td>
+</tr>
+
+<tr>
+  <td>Serv. Basico (telefono) (Mensual) </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n96"></p></td>
+</tr>
+
+<tr>
+  <td>Transporte </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n95"></p></td>
+</tr>
+
+<tr>
+  <td>educacion </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n94"></p></td>
+</tr>
+
+<tr>
+  <td>vestimenta </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n93"></p></td>
+</tr>
+
+<tr>
+  <td>Recreacion gastos </td>
+  <td><p>    <div class="mb-3">
+    <label for="disabledSelect" class="form-label"> </label>
+    <select id="disabledSelect" class="form-select">
+      <option>s</option>
+      <option>M</option>
+    </select></p></td>
+  <td><input type="text" id="n92"></p></td>
+</tr>-->
+
+
+<!--OPERACIONES
+function operaciones(op)
+{
+
+    var ops = {
+        sumar: function sumarNumeros(n1, n2) {
+            return (parseInt(n1) + parseInt(n2));
+        },
+
+        restar: function restarNumeros(n1, n2) {
+            return (parseInt(n1) - parseInt(n2));
+        },
+        
+        multiplicar: function multiplicarNumeros(n1, n2) {
+            return (parseInt(n1) * parseInt(n2));
+        },
+
+        dividir: function dividirNumeros(n1, n2) {
+            return (parseInt(n1) / parseInt(n2));
+        }
+
+
+    };-->
+
+<!-- platilla
+  <form>
+  <fieldset disabled>
+    <legend>Disabled fieldset example</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Disabled select menu</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+	<option>opcion2</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+    OPTION
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Frecuencia</label>
+        <select id="disabledSelect" class="form-select">
+          <option>s</option>
+          <option>M</option>
+        </select>
+      </div>-->
+      
