@@ -22,9 +22,9 @@ let interesDeCuota = 0;
 
 var date = new Date();
 var d  = date.getDate();
-var day = (d < 10) ? '0' + d : d;
+var day =  d;
 var m1 = date.getMonth() + 1;
-var month = (m < 10) ? '0' + m1 : m1;
+var month = m1;
 var yy = date.getYear();
 var year = (yy < 1000) ? yy + 1900 : yy;
 document.write(day + "/" + month + "/" + year);

@@ -26,6 +26,8 @@
   <!--====== gLightBox css ======-->
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
+  <link rel="stylesheet" href="assets/css/controlador.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -184,56 +186,56 @@
 
                   <form action="#" class="contact-form">
 
-                    <div class="row">
-                      <div class="col-md-3">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-4 espaciado ">
                         <span>Ingresos Esposo:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-5 espaciado">
                         <select name="moneda" id="p1" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
-                      <div class="col-md-5">
-                        <input type="number" name="monto" id="n11" placeholder="Monto" required />
+                      <div class="col-md-3 espaciado">
+                        <input type="number" name="monto" id="n11" placeholder="Monto" required style="margin:auto;" />
                       </div>
-                      <div id="sp1" class="col-md-1">
+                      <div id="sp1" class="col-md-1 espaciado">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-3">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-4 espaciado">
                         <span>Ingresos Esposa:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-5 espaciado">
                         <select name="moneda" id="p2" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
-                      <div class="col-md-5">
-                        <input type="number" name="monto" id="n22" placeholder="Monto" required />
+                      <div class="col-md-3 espaciado">
+                        <input type="number" name="monto" id="n22" placeholder="Monto" required style="margin:auto;" />
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-3">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-4 espaciado">
                         <span>Otros Ingresos:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-5 espaciado">
                         <select name="moneda" id="p3" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
-                      <div class="col-md-5">
-                        <input type="number" name="monto" id="n33" placeholder="Monto" required />
+                      <div class="col-md-3 espaciado">
+                        <input type="number" name="monto" id="n33" placeholder="Monto" required style="margin:auto;" />
                       </div>
                     </div>
 
                     <div class="row">
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <span>TOTAL INGRESOS:</span>
                       </div>
                       <div class="col-md-8">
@@ -300,138 +302,138 @@
                   </div>
 
                   <form action="#" class="contact-form">
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Gastos de alimentacion:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p4" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n99" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n99" placeholder="Monto" required style="margin:auto;" />
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Servicio Basico (Luz):</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <select name="moneda" id="disabledSelect" onclick="cambia()" class="form-select rounded-pill">
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n98" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n98" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Servicio Basico (Agua):</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <select name="moneda" id="disabledSelect" onclick="cambia()" class="form-select rounded-pill">
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n97" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n97" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Servicio Basico (Telefono):</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <select name="moneda" id="disabledSelect" onclick="cambia()" class="form-select rounded-pill">
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n96" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n96" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Gastos de Transporte:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p5" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n95" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n95" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Gastos de Educacion:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p6" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n94" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n94" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Gastos de Vestimenta:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p7" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n93" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n93" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Recreacion de Gastos:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p8" onclick="cambia()" class="form-select rounded-pill">
                           <option value="s">semanal</option>
@@ -439,37 +441,37 @@
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n92" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n92" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-5">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>Cuota de Credito:</span>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
 
                         <select name="moneda" id="p9" onclick="cambia()" class="form-select rounded-pill">
-                          <option value="s">semanal</option>
+                          <option value="s">Semanal</option>
                           <option value="M">Mensual</option>
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <input type="number" name="monto" id="n91" placeholder="Monto" required />
+                        <input type="number" name="monto" id="n91" placeholder="Monto" required style="margin:auto;"/>
                       </div>
                       <div id="sp1" class="col-md-1">
                         <span></span>
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-3">
+                    <div class="row espaciadoFila">
+                      <div class="col-md-5 espaciado">
                         <span>TOTAL GASTOS:</span>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-md-7">
                         <td>tu resultado es:
                           <span id="r99"></span>
                         </td>
